@@ -48,8 +48,8 @@ html, body {
     background-color: #13152C;
     padding: 0% 0;
     font-size: 17px;
-    border-bottom: none;
-    
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(245,245,245, 0.3); 
     
     
 }
@@ -206,7 +206,7 @@ html, body {
 
 /* Sociale medier ikon, placering, farve, størelse osv */ 
 
-.s-m a{
+.so-me a{
     display: inline-flex;
     width: 40px;
     height: 40px;
@@ -224,19 +224,19 @@ html, body {
 
 /* Hover effekten når man holder musen henover */ 
 
-.s-m a:hover{
+.so-me a:hover{
     background: #FDD228; 
 }
 
 /* Ikoner inde i cirkel, hvor hurtigt de skal rotate når man hover */ 
 
-.s-m a i{
+.so-me a i{
     transition: 0.4s all; 
 }
 
 /* Hvordan ikonerne rotatere */
 
-.s-m a:hover > i{
+.so-me a:hover > i{
     transform: scale(1.6) rotate(25deg);
 }
 
@@ -294,6 +294,7 @@ html, body {
 .footer-top{
     background: #111;
     padding: 70px;
+    
 }
 
 .sektion-1 h3{
@@ -343,7 +344,6 @@ html, body {
     text-align: center;
     background: black;
     line-height: 70px;
- 
 }
 
 .so-me a{
@@ -375,7 +375,9 @@ html, body {
     transform: scale(1.6) rotate(25deg);
 }
 
-
+.footer-bottom-text{
+    width: 100%;
+}
 
 
 
