@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
+   <!-- Nødvendige meta tags --> 
     <meta charset="UTF-8">
-    <title>Kontakt side</title>
-    
-    <!--Meta description blandt andet til at hjælpe med CEO samt understøtter google søgninger.-->
-    
-	<meta name="description" content="Kan du lide fodbold? Her på siden kan du finde tutorials om fodbold. En guide til hvordan du kan forbedre dig på fodboldbanen. ">
-   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!--Meta description som kommer frem under når man søger på google, samt hjælper til CEO optimering-->
+    <meta name="description" content="Kan du lide fodbold? Her på siden kan du finde tutorials om fodbold. En guide til hvordan du kan forbedre dig på fodboldbanen.">
+    
+    <!-- Sidens titel --> 
+    <title>Kontakt side</title>
+    
+	<!-- Bane blad icon -->
+	<link rel="shortcut icon" type="image/png" href="exam-logo.png">
+    
+    <!-- Bootstrap CSS --> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
-    <!-- Fontawesome er brugt til at hente ikoner til sociale medier -->
-    
-    <script src="https://kit.fontawesome.com/a944cea46b.js" crossorigin="anonymous"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <!-- Stylesheet --> 
     <link href="style.css" rel="stylesheet"> 
     
-    
-    <!-- Bane blad icon -->
-	<link rel="shortcut icon" type="image/png" href="exam-logo-2sem-01.svg">
+    <!-- Fontawesome er brugt til at hente ikoner til sociale medier -->
+    <script src="https://kit.fontawesome.com/a944cea46b.js" crossorigin="anonymous"></script>
+     
+    <!-- Bootstrap link for at burger-menu skal aktiveres, uden dette link kan man ikke få burger-menu til at dropdown, samt jquery link som også er en nødvendighed for burger-menu. Jquery link skal placeres før bootstrap ellers fungere det ikke. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 </head>
 
 <body>
@@ -40,18 +41,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- Navbar/Header logo --> 
                 <a class="navbar-brand" href="#"><img src="header-logo.png"></a>
             </div>
+            <!-- Collapse navbar, samt navbar.--> 
             <div class="collapse navbar-collapse" id="navbar-collapse-main">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="line-effect" href="index.html">Forside</a></li>
+                    <!-- Dropdown under træning. --> 
                     <li class="dropdown">
                         <a class="dropbtn line-effect">Træning</a>
                         <div class="dropdown-content">
-                        <a class="line-effect" href="#">Amatør</a>
-                        <a class="line-effect" href="#">Middel</a>
-                        <a class="line-effect" href="#">Expert</a>
-                        
+                            <a class="line-effect" href="#">Amatør</a>
+                            <a class="line-effect" href="#">Middel</a>
+                            <a class="line-effect" href="#">Expert</a>
                         </div>
                     <li><a class="line-effect" href="#">Om</a></li>
                     <li><a href="contact.html" class="active">Kontakt</a></li>
@@ -73,13 +76,13 @@
                 <h2>Kontakt
                     <span> os </span>
                 </h2>
+                   <!-- Brødtekst under heading text --> 
                     <p>I er meget velkommen til at tage kontakt hvis i er i tvivl eller har nogen spørgsmål.
                         <br>Vi svare tilbage indenfor 24 timer.</p>
                 <!-- Her har vi givet hele formen 7 koloner når den er over md-breakpoint, så den fylder lidt mere end kontakt detaljer. -->   
                 <div class="col-md-7">
-
                     <form>
-                       <!-- Her har vi givet formen en row for at holde styr på layoutet bedre. --> 
+                        <!-- Her har vi givet formen en row for at holde styr på layoutet bedre. --> 
                         <div class="row">
                            <!-- Vi har opdelt de 2 første klasser så de fylder 6 col inde i den overordnet row, når den er over sm-breakpoint, når den kommer under sm-breakpoint så fylder hvert element 12 col -->
                             <div class="col-sm-6">
@@ -108,64 +111,68 @@
                         <p>Yderligere detajler, i er mere end velkommen til at ringe til os. </p>
                     </div>
                     <div class="content">
-                        <!-- Info-1 -->
+                        <!-- Information-1 -->
                         <div class="info">
                             <h4 class="d-inline-block">Telefon nummer : 
                                 <br>
                                 <span>+ 45 40 22 24 58</span></h4>
                         </div>
-                        <!-- Info-2 -->
+                        <!-- Information-2 -->
                         <div class="info">
                             <h4 class="d-inline-block">E-mail :
                                 <br>
                                 <span>E-ballforall@hotmail.com</span></h4>
                         </div>
-                        <!-- Info-3 -->
+                        <!-- Information-3 -->
                         <div class="info">
-                            <h4 class="d-inline-block">Sociale medier : <br>
-                                
+                            <h4 class="d-inline-block">Sociale medier : <br> 
                         </div>
-                        
-                        <div class="s-m">
+                        <!-- Sociale medier : SO-ME --> 
+                        <div class="so-me">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
-                        
                     </div>
                 </div>
-
-                
             </div>
         </div>
     </section>
+    <!-- Kontakt formular færdiggjort --> 
     
     
-    
-    
+    <!-- Footer begyndelse --> 
    <footer>
+        <!-- Footer begynder --> 
          <div class="footer-top">
+            <!-- Container til alt indhold --> 
              <div class="container">
+                <!-- Footer layout en row = 12 col -->  
                  <div class="row">
+                    <!-- De forskellige breakpoints er givet for at gøre den responsiv --> 
                      <div class="col-md-3 col-sm-6 col-xs-12 sektion-1">
                          <h3>COPENHAGEN <br> E-BALL ACADEMY</h3>
                          <p>Fodbold er en af de ting der altid kan forbedres, uanset ens niveau. Find de tutorials der passer dit fodbold niveau. Svedig skudtræning og frække finter er i  blandt de fodbold tutorials du  finder her på siden.</p>
                      </div>
 
-
+                    <!-- Responsiv --> 
                      <div class="col-md-6 col-sm-6 col-xs-12 sektion-2">
                          <img src="exam-logo.png" alt="Logo" height="200px" width="200px">
                      </div>
 
-
+                    <!-- Responsiv --> 
                      <div class="col-md-3 col-sm-6 col-xs-12 sektion-3">
                      <h2>Vores nyhedsbrev</h2>
                      <p>Tryk her for at tilmelde dig vores nyhedsbrev, og gå aldrig glip af en ny fodbold tutorial igen.</p>
-                     <form action="">
+                     
+                     <!-- Nyhedsbrev --> 
+                     <form>
                          <input type="email" placeholder="E-mail">
                          <input type="submit" value="TILMELD">
                      </form>
                      <br>
+                     
+                     <!-- Sociale medier i footeren, SO-ME --> 
                      <div class="so-me">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -175,11 +182,9 @@
                  </div>
              </div>
          </div>
-         <div class="footer-bottom-text"><p> &copy; 2020 COPENHAGEN E-BALL ACADEMY | All Rights Reserved</p></div>
+         <!-- Bottom footer med copyrights samt brand navn --> 
+         <div class="footer-bottom-text"><span> &copy; 2020 COPENHAGEN E-BALL ACADEMY | All Rights Reserved</span></div>
      </footer>
-    
-    
-    
-    
+    <!-- Overall footer slut --> 
 </body>
 </html>
